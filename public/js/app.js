@@ -6,9 +6,9 @@
         var app = angular.module("webapp", ['ngRoute']);
         app.config(["$routeProvider", function ($routeProvider) {
             $routeProvider.when("/home", angularAMD.route({
-                templateUrl: 'views/home.html',
+                templateUrl: 'public/views/home.html',
                 controller: 'HomeCtrl',
-                controllerUrl: 'js/controller/HomeController'
+                controllerUrl: 'controller/HomeController'
             }))
         }]);
         return angularAMD.bootstrap(app);
